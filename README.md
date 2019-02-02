@@ -7,13 +7,14 @@ A website that allows people to sign up for nearby silent mindfulness dinners. H
 The initial layout was built using [Bootstrap Shuffle](https://bootstrapshuffle.com).
 
 ### 1. Getting Started
+
 Project's source files are placed in ./src/ directory.
 
-* ./src/assets - default static files (eg. image placeholders). You should replace them with your own files.
+- ./src/assets - default static files (eg. image placeholders). You should replace them with your own files.
 
-* ./src/scss/ - Sass sources used to build Bootstrap theme. Variables used in Theme Customizer are located in custom-variables.scss file.
+- ./src/scss/ - Sass sources used to build Bootstrap theme. Variables used in Theme Customizer are located in custom-variables.scss file.
 
-* ./src/*.pug - All your pages (templates) are stored in separated .pug files.
+- ./src/\*.pug - All your pages (templates) are stored in separated .pug files.
 
 ### 2. Installation
 
