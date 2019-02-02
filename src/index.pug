@@ -1,0 +1,74 @@
+doctype html
+html(lang="pl")
+    include includes/head.pug
+    body
+        .container-fluid
+
+            include includes/navbar.pug
+
+            section.jumbotron
+                .container.text-center
+                    h1.display-4 Join a Silent Dinner
+                    p.lead.text-muted Join a silent dinner in the tradition of the Plum Village Monastery. Hosts open up their homes to 6-10 guests for a homemade vegetarian meal; the first 15 minutes are enjoyed in silence, followed by mindful conversation and getting to know your dinner mates. 100% community-organized and not for profit.
+
+                    a.btn.btn-primary.my-2(href="#upcoming") Find a dinner
+                    a.btn.btn-link.my-2(href="#how-it-works") Read more
+
+            section.py-5
+                .container.text-center#how-it-works
+                    h2.mb-3 How It Works
+                    .row.mb-3
+                        .col-md-4.p-2.py-3
+                            img.img-fluid.mx-auto.my-4(src="/images/Screen_Shot_2019-02-01_at_8.21.27_PM.png", alt="")
+                            h4.my-4 #[small.rounded-circle.px-3.py-2.mr-2.bg-primary 1] Sign up for a dinner
+                            p Find a local dinner near you. Sign up to notify the host and reserve your spot.
+                        .col-md-4.p-2.py-3
+                            img.img-fluid.mx-auto.my-4(src="/images/IMG_20181011_193821768.jpg", alt="")
+                            h4.my-4 #[small.rounded-circle.px-3.py-2.mr-2.bg-primary 2] Get matched with a host
+                            p Once you are matched, you'll be asked to send $10 to your host via venmo or paypal to cover the cost of food and to confirm your spot.
+                        .col-md-4.p-2.py-3
+                            img.img-fluid.mx-auto.my-4(src="/images/IMG_20190127_191319330.jpg", alt="")
+                            h4.my-4 #[small.rounded-circle.px-3.py-2.mr-2.bg-primary 3] Practice mindfulness through food
+                            p Meet mindful people in your community over dinner together. The first 15 minutes will be enjoyed in silence.
+
+            section.py-5
+                .container.text-center#upcoming
+                    h2 Upcoming dinners
+                    .row.mb-3
+
+                    table.table
+                        tr.thead-light
+                            th Date
+                            th Spots remaining
+                            th Neighborhood
+                            th Sign up
+                        tr
+                            th Thurs Feb 7th, 2019 @ 7pm
+                            th 3/10
+                            th Shaw
+                            th
+                                a.btn.btn-primary.mt-6(href="register.html") Register
+                        tr
+                            th Sun Mar 10th, 2019 @ 6pm
+                            th 6/8
+                            th Bloomingdale
+                            th
+                                a.btn.btn-primary.mt-6(href="register.html") Register
+                        tr
+                            th Thurs Mar 21st, 2019 @ 6:30pm
+                            th 7/7
+                            th Mount Pleasant
+                            th
+                                a.btn.btn-primary.mt-6(href="register.html") Register
+
+
+
+            section.jumbotron
+                .container.text-center
+                    p.lead.text-muted "It is possible that the next Buddha will not take the form of an individual. The next Buddha may take the form of a community, a community practicing understanding and loving kindness, a community practicing mindful living. And the practice can be carried out as a group, as a city, as a nation."
+                    p.lead.text-muted - Thich Nhat Hanh
+
+
+        script(src="js/jquery/jquery.min.js")
+        script(src="js/popper/popper.min.js")
+        script(src="js/bootstrap/bootstrap.min.js")

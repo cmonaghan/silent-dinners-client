@@ -1,0 +1,31 @@
+doctype html
+html(lang="pl")
+    include includes/head.pug
+    body
+        .container-fluid
+
+            include includes/navbar.pug
+
+            section.py-5
+                .container
+                    .row.mb-3
+                      .col-md-6.p-2.py-3
+                        h2.mb-3 Register for a dinner
+                        form
+                          .form-group
+                            label(for="email") Email address
+                            input(type="email" placeholder="Email" required).form-control
+                          .form-group
+                            label(for="phone") Phone number
+                            input(type="tel" placeholder="Phone" required).form-control
+                            small.form-text.text-muted Your phone number is used for communications with your host
+                          .form-group.form-check
+                            input(type="checkbox").form-check-input
+                            label.form-check-label I'd like to bring a +1.
+                          .form-group
+                            label(for="food-restrictions") Please list any dietary restrictions
+                            input(type="text" placeholder="Dietary restrictions").form-control
+                          .form-group.form-check
+                            input(type="checkbox" required).form-check-input
+                            label.form-check-label I acknowledge that by submitting this form, a spot will be saved and food prepared on my behalf. If I cannot attend for any reason, I will notify my host immediately.
+                          a.btn.btn-primary.my-2(href="#") Submit
